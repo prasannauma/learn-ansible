@@ -12,10 +12,10 @@
   hosts: all
   connection: local
   tasks:
-    -name: access variable from task level
+  - name: access variable from task level
     ansible.builtin.debug:
-      msg: url == {{url}}
+      msg: URL == {{URL}}
       vars:
-      url: uma.com
+      URL: play.example.com
 
 
