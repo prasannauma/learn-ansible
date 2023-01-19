@@ -2,8 +2,8 @@
   hosts : all
   connection : local
   vars :
-    URL : uma.com
+    URL : play.example.com
     tasks :
-      - name : access variable from play level
+      - name : access variable
         ansible.builtin.debug:
           msg : URL == {{URL}}
