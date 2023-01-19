@@ -31,7 +31,13 @@
 
 
 
-
+- name: declare a variable from inv file
+  hosts: all
+  connection: local
+  tasks:
+    - name: access a variable from inv file
+      ansible.builtin.debug:
+        msg: URL == {{URL}}
 
 
 
