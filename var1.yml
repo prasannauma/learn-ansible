@@ -31,11 +31,11 @@
 
 
 
-- name: declare a variable from inv file
+- name: Declare a variable from inventory file
   hosts: all
   connection: local
   tasks:
-    - name: access a variable from inv file
+    - name: access a variable
       ansible.builtin.debug:
         msg: URL == {{URL}}
 
