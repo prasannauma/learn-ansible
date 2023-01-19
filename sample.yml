@@ -1,5 +1,5 @@
 - name : creating playbook in ansible
-  host : all
+  hosts : all
   connection : local
   tasks :
   - name : print hello
