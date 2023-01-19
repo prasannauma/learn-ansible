@@ -3,7 +3,7 @@
   connection : local
   vars :
     URL : play.example.com
-    task :
+    tasks :
       - name : access variable
         ansible.builtin.debug:
           msg : URL == {{URL}}
